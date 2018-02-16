@@ -15,7 +15,7 @@ img.onclick=function() {
 
 //Applying the gradual animation to the image
 
-var img =document.getElementById('madi');
+var img = document.getElementById('madi');
 var marginLeft=0;
 function moveRight() {
     marginLeft=marginLeft+10;
