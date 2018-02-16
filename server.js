@@ -5,11 +5,12 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
-    title:"Article-One | Shivendra",
-    heading:'Article-one',
-    date:'Feb-15-2018',
-    content:`
+var articles = {
+    articleOne : {
+            title:"Article-One | Shivendra",
+            heading:'Article-one',
+            date:'Feb-15-2018',
+            content:`
         <p>
             This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. 
         </p>
@@ -18,7 +19,38 @@ var articleOne = {
         </p>
         <p>
             This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. 
+        </p> `},
+        
+        articleTwo : {
+             title:"Article-Two | Shivendra",
+            heading:'Article-Two',
+            date:'Feb-15-2018',
+            content:`
+        <p>
+            This is the content of my second aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. 
+        </p>
+        <p>
+            This is the content of my second aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. 
+        </p>
+        <p>
+            This is the content of my second aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. 
         </p> `
+            },
+            
+    articleThree: {
+             title:"Article-Three | Shivendra",
+            heading:'Article-three',
+            date:'Feb-15-2018',
+            content:`
+        <p>
+            This is the content of my three aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. 
+        </p>
+        <p>
+            This is the content of my three aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. 
+        </p>
+        <p>
+            This is the content of my three aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. 
+        </p> `}
         
 };
 function createTemplate(data) {
@@ -54,8 +86,6 @@ var htmlTemplate = `
 </body>
 </html> `;
 return htmlTemplate;
-
-    
 }
 
 
