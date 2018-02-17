@@ -43,16 +43,16 @@ button.onclick = function() {
     
     //capture the response and store it in the variable
     
-    request.onreadystatechange=function(){
-        if(request.readystate===XMLHttpRequest.DONE) {
+    request.onreadystatechange = function(){
+        if(request.readystate === XMLHttpRequest.DONE) {
             //take some action
-            if(request.status===200) {
+            if(request.status === 200) {
                 var counter = request.responseText;
                  var span = document.getElementById('count');
                 span.innerHTML=counter.toString();             
             }
         }
-    }
+    };
 
 request.open('GET','http://shivendra12091999.imad.hasura-app.io/counter',true);
 request.send(null);
