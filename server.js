@@ -102,7 +102,7 @@ app.get('/submit-name', function(req,res) {
    var name = req.query.name;  // extracting name from url endpoint
    
    names.push(name);
-   res.send(JSON.stringify(names));
+   res.send(JSON.parse(names));
 });
 
 app.get('/:articleName',function(req,res) {
