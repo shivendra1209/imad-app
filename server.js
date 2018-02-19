@@ -125,7 +125,7 @@ app.get('/:articleName',function(req,res) {
 var comment1="";
 app.get('/:articleName',function(req,res) {
 
-    var article_one = req.params.articleName;
+    var articleName = req.params.articleName;
     res.send(createTemplate(articles[articleName]));
 
         app.get('/submit-comment',function(req,res) {
