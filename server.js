@@ -89,6 +89,9 @@ var htmlTemplate = `
                 
                     
                     </div>
+                    
+                    
+    </div>
 
 </body>
 </html> `;
