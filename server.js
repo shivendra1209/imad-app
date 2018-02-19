@@ -21,9 +21,18 @@ var articles = {
         This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. 
         </p>
             
-         <input type="text" id="name" placeholder="Add Your Comment Here...."></input>
-                    <input type="submit" value="submit" id="submit_btn"></input>
-                    `},
+                     <input type="text" id="cmnt1" placeholder="Add Your Comment Here...."></input>
+                    <input type="submit" value="submit" id="submit_btn1"></input>
+                    
+                    <p id="comment">
+                    
+                    
+                    
+                    
+                    
+                    </p>
+                    
+            `},
         'article-two' : {
         title:"Article-Two | Shivendra",
         heading:'Article-Two',
@@ -112,6 +121,14 @@ app.get('/submit-name', function(req,res) {
 app.get('/:articleName',function(req,res) {
     var articleName=req.params.articleName;
     res.send(createTemplate(articles[articleName]));
+});
+
+var comment1="";
+app.get('/submit-comment',function(req,res) {
+    var cmt1 = req.query.cmt1;
+    
+    comment1=cmt1;
+    res.send(JSON.stringify(comment1));
 });
 
 
