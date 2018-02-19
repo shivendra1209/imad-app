@@ -85,3 +85,28 @@ request.send(null);
             request.open('GET','http://shivendra12091999.imad.hasura-app.io/submit-name?name='+name,true);
             request.send(null);
   };
+  
+  
+  //comment submit code for article-1
+  
+    var submit1 = document.getElementById('submit_btn1');
+    submit1.onclick= function() {
+        var request1 = new XMLHttpRequest();
+        
+        request1.onreadystatechange = function() {
+                if(request1.readyState === XMLHttpRequest.DONE) {
+                    if(request1.status === 200) {
+                        var comment1 = request.responseText;
+                        comment1=JSON.parse(comment1);
+                        
+                        var p1= document.getElementById('comment');
+                        p1.innerHTML=comment1;
+                    }
+                }
+        };
+        
+            var cmtInput1 = document.getElementById('cmnt1');
+                var comment = cmtInput1.value;
+                request1.open('GET','http://shivendra12091999.imad.hasura-app.io/submit-comment?cmt1='+comment,true);
+                request1.send(null);
+    };
