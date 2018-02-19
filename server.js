@@ -10,7 +10,7 @@ var articles = {
         title:"Article-One | Shivendra",
         heading:'Article-one',
         date:'Feb-15-2018',
-        content:`<div>
+        content:`
         <p>
         This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. 
         </p>
@@ -20,9 +20,7 @@ var articles = {
         <p>
         This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. 
         </p>
-           
-                    
-            `},
+             `},
         'article-two' : {
         title:"Article-Two | Shivendra",
         heading:'Article-Two',
