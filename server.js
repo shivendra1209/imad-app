@@ -85,10 +85,10 @@ var htmlTemplate = `
                      <input type="text" id="cmnt1" placeholder="Add Your Comment Here...."></input>
                     <input type="submit" value="submit" id="submit_btn1"></input>
                     
-                    <p id="comment">
+                    <div id="comment">
                 
                     
-                    </p>
+                    </div>
                     
                     
     
