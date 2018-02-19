@@ -10,7 +10,7 @@ var articles = {
         title:"Article-One | Shivendra",
         heading:'Article-one',
         date:'Feb-15-2018',
-        content:`
+        content:`<div>
         <p>
         This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. 
         </p>
@@ -20,7 +20,7 @@ var articles = {
         <p>
         This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. 
         </p>
-            
+            </div>
                      <input type="text" id="cmnt1" placeholder="Add Your Comment Here...."></input>
                     <input type="submit" value="submit" id="submit_btn1"></input>
                     
