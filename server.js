@@ -20,17 +20,7 @@ var articles = {
         <p>
         This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. 
         </p>
-            </div>
-                     <input type="text" id="cmnt1" placeholder="Add Your Comment Here...."></input>
-                    <input type="submit" value="submit" id="submit_btn1"></input>
-                    
-                    <p id="comment">
-                    
-                    
-                    
-                    
-                    
-                    </p>
+           
                     
             `},
         'article-two' : {
@@ -93,6 +83,14 @@ var htmlTemplate = `
     <div>
         ${content}
     </div>
+      <div>
+                     <input type="text" id="cmnt1" placeholder="Add Your Comment Here...."></input>
+                    <input type="submit" value="submit" id="submit_btn1"></input>
+                    
+                    <p id="comment">
+                
+                    
+                    </p>
     </div>
 </body>
 </html> `;
