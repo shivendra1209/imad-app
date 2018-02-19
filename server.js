@@ -21,7 +21,7 @@ var articles = {
         This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. This is the content of my first aerticle. 
         </p>
             
-         <input type="text" id="name" placeholder="name"></input>
+         <input type="text" id="name" placeholder="Add Your Comment Here...."></input>
                     <input type="submit" value="submit" id="submit_btn"></input>
                     `},
         'article-two' : {
