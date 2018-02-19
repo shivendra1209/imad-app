@@ -99,8 +99,8 @@ request.send(null);
                         var comment1 = request.responseText;
                        // comment1=JSON.parse(comment1);
                         
-                        var p1= document.getElementById('comment');
-                        p1.innerHTML=comment1;
+                        var div= document.getElementById('comment');
+                        div.innerHTML=comment1;
                     }
                 }
         };
