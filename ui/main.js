@@ -97,7 +97,7 @@ request.send(null);
                 if(request1.readyState === XMLHttpRequest.DONE) {
                     if(request1.status === 200) {
                         var comment1 = request.responseText;
-                        comment1=JSON.parse(comment1);
+                       // comment1=JSON.parse(comment1);
                         
                         var p1= document.getElementById('comment');
                         p1.innerHTML=comment1;
