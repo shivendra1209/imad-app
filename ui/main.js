@@ -95,7 +95,7 @@ request.send(null);
         
         request1.onreadystatechange = function() {
                 if(request1.readyState === XMLHttpRequest.DONE) {
-                    if(request1.status === 200) {
+                    if(request1.status === 304) {
                         var comment1 = request1.responseText;
                         comment1=JSON.parse(comment1);
                         
