@@ -61,7 +61,7 @@ request.send(null);
   
   //submit-name code
   
-  var submit=document.getElementById('submit_btn1');
+  var submit=document.getElementById('submit_btn');
   submit.onclick = function() {
       var request = new XMLHttpRequest(); //request is created
       
