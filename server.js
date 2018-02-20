@@ -82,14 +82,7 @@ var htmlTemplate = `
         ${content}
     </div>
       
-                     <input type="text" id="cmnt1" placeholder="Add Your Comment Here...."></input>
-                    <input type="submit" value="submit" id="submit_btn1"></input>
-                    
-                    <div id="comment">
                 
-                    
-                    </div>
-                    
                     
     
 
