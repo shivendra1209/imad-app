@@ -95,7 +95,7 @@ request.send(null);
         
         request1.onreadystatechange = function() {
                 if(request1.readyState === XMLHttpRequest.DONE) {
-                    if(request1.status === 304) {
+                    if(request1.status === 200) {
                         var comment1 = request1.responseText;
                         comment1=JSON.parse(comment1);
                         
@@ -107,7 +107,7 @@ request.send(null);
         
             var cmtInput1 = document.getElementById('cmnt1');
                 var comment = cmtInput1.value;
-                request1.open('GET','http://shivendra12091999.imad.hasura-app.io/aticle-one/submit-comment?cmt1='+comment,true);
+                request1.open('GET','http://shivendra12091999.imad.hasura-app.io/submit-comment?cmt1='+comment,true);
                 request1.send(null);
                 
                 
