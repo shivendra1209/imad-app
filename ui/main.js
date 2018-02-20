@@ -107,9 +107,6 @@ request.send(null);
         
             var cmtInput1 = document.getElementById('cmnt1');
                 var comment = cmtInput1.value;
-                
-                request.open('GET','http://shivendra12091999.imad.hasura-app.io/article-one',true);
-                request.send(null);
                 request1.open('GET','http://shivendra12091999.imad.hasura-app.io/submit-comment?cmt1='+comment,true);
                 request1.send(null);
                 
