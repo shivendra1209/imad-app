@@ -116,7 +116,7 @@ app.get('/:articleName',function(req,res) {
 });
 
 var comment1="";
-app.get('/article-one/submit-comment',function(req,res) {
+app.get('/submit-comment',function(req,res) {
         var cmt1 = req.query.cmt1;
         comment1=cmt1;
         res.send(JSON.stringify(comment1));
