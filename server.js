@@ -110,17 +110,21 @@ app.get('/submit-name', function(req,res) {
    res.send(JSON.stringify(names));
 });
 
+var comment1="";
+app.get('/submit-comment',function(req,res) {
+    
+    console.log("shoivendra");
+        var cmt1 = req.query.cmt1;
+        comment1=cmt1;
+        res.send(JSON.stringify(comment1));
+});
+
+
 app.get('/:articleName',function(req,res) {
     var articleName=req.params.articleName;
     res.send(createTemplate(articles[articleName]));
 });
 
-var comment1="";
-app.get('/submit-comment',function(req,res) {
-        var cmt1 = req.query.cmt1;
-        comment1=cmt1;
-        res.send(JSON.stringify(comment1));
-});
 
 
 app.get('/ui/style.css', function (req, res) {
