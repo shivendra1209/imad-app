@@ -113,7 +113,7 @@ app.get('/submit-name', function(req,res) {
 var comment1="";
 app.get('/submit-comment',function(req,res) {
     
-    console.log("shoivendra");
+    
         var cmt1 = req.query.cmt1;
         comment1=cmt1;
         res.send(JSON.stringify(comment1));
