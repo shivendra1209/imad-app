@@ -35,3 +35,7 @@ body {
     max-width: 350px;
     height: 152px;
 }
+
+#comment {
+    padding-top:50px;
+}
