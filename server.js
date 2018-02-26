@@ -149,13 +149,13 @@ app.get('/submit-comment',function(req,res) {
 
 app.get('/articles/:articleName',function(req,res) {
     
-    //(  below is the command when we are requesting directly---
+    //(  below is the code when we are requesting directly---
     //var articleName=req.params.articleName;
     //res.send(createTemplate(articles[articleName])); )
     
-    //below is the command when we are connecting with the database
+    //below is the code when we are connecting with the database
     
-    pool.query("SELECT * FROM article WHERE title =" + "req.params.articleName ",function(err,result){
+    pool.query("SELECT * FROM article WHERE title =$1" , [req.params.articleName] , function(err,result){
         if(err){
             res.status(500).send(err.toString());
         } else{
