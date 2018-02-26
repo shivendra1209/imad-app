@@ -154,8 +154,8 @@ app.get('/articles/:articleName',function(req,res) {
     //res.send(createTemplate(articles[articleName])); )
     
     //below is the command when we are connecting with the database
-    
-    pool.query('SELECT * FROM article WHERE title =' + "req.params.articleName",function(err,result){
+    var articleName=req.params.articleName;
+    pool.query( 'SELECT * FROM article WHERE title ='+'articleName' ,function(err,result){
         if(err){
             res.status(500).send(err.toString());
         } else{
